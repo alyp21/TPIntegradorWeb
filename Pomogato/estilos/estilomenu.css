@@ -1,0 +1,92 @@
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.121);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    
+}
+.logo img {
+    width: 30px;
+    height: 30px;
+    padding-top: none;
+    margin-top: none;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.logo h1 {
+    font-size: 24px;
+    color: #fffefeb5;
+    letter-spacing: 3px;;
+    /*tengo que buscar una fuente que me guste*/
+}
+.menu {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 12px;
+    padding-right: 6px;
+    color: #ffffffaf;
+}
+.menu a {
+    text-decoration: none;
+    color: #ffffffb3;
+    font-weight: bold;
+    padding-left: 2px;
+    padding-right: 30px;
+    justify-content: center;
+    transition:0.3s;
+    letter-spacing: 1px;
+}
+.menu a:hover {
+    color: rgba(0, 0, 0, 0.741);
+    background-color: rgba(132, 15, 15, 0.708);
+    border-radius: 2px;
+    padding: 8px;
+}
+.contenido {
+    text-align: center;
+    margin-top: 50px;
+    color: #e4e4e4c5;
+}
+.contenido h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.contenido p {
+    font-size: 15px;
+    font-style: italic;
+}
+.carrousel {
+    justify-content: center;
+    margin-top: 50px;
+    display: flex;
+    gap: none;
+}
+.imagenes {
+    width: 800px;
+    height: 400px;
+    display: flex;
+    gap: none;
+    padding: none;
+    margin: none;
+    justify-content: center;
+}
+.botones {
+    padding-top: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+
+}
+body{
+    background-image: url(../img/fondo_menu.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
