@@ -3,29 +3,33 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.121);
+    background-color: rgba(42, 63, 158, 0.153);
 }
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     
 }
 .logo img {
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     padding-top: none;
     margin-top: none;
     padding-left: 5px;
-    padding-right: 5px;
+    padding-right: 2px;
+    filter: invert(1) grayscale(1) brightness(2);
 }
 .logo h1 {
-    font-size: 24px;
-    color: #fffefeb5;
-    letter-spacing: 3px;;
+    font-size: 20px;
+    color: #ffffffb5;
+    letter-spacing: 3px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
     /*tengo que buscar una fuente que me guste*/
 }
 .menu {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
     display: flex;
     gap: 15px;
     align-items: center;
@@ -45,14 +49,14 @@
 }
 .menu a:hover {
     color: rgba(0, 0, 0, 0.741);
-    background-color: rgba(132, 15, 15, 0.708);
+    background-color: rgba(7, 47, 87, 0.278);
     border-radius: 2px;
     padding: 8px;
 }
 .contenido {
     text-align: center;
     margin-top: 50px;
-    color: #e4e4e4c5;
+    color: #ffffffc5;
 }
 .contenido h3 {
     font-size: 28px;
@@ -66,27 +70,56 @@
     justify-content: center;
     margin-top: 50px;
     display: flex;
-    gap: none;
+    align-items: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+    overflow: hidden;
 }
 .imagenes {
-    width: 800px;
+    width: fit-content;
     height: 400px;
     display: flex;
     gap: none;
     padding: none;
     margin: none;
     justify-content: center;
+    align-items: center;
 }
 .botones {
-    padding-top: 10px;
     display: flex;
-    gap: 10px;
-    justify-content: center;
-
-
+    width: 700px;
+    justify-content: space-between;
+    position: absolute;
+}
+.botones button{
+    background-color: transparent;
+    border: none;
+    color: #13254d;
+    font-size: 22px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.botones button:hover{
+    color: rgba(255, 255, 255, 0.741);
+    background-color: rgba(19, 15, 132, 0.019);
+    border-radius: 2px;
+    padding: 8px;
 }
 body{
-    background-image: url(../img/fondo_menu.png);
+    background-image: url(../img/image.png);
     background-size: cover;
     background-attachment: fixed;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(120, 120, 120, 0.088);
+    color: #ffffffb5;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
 }
