@@ -12,24 +12,26 @@
     
 }
 .logo img {
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     padding-top: none;
     margin-top: none;
     padding-left: 5px;
     padding-right: 2px;
-    filter: invert(1) grayscale(1) brightness(2);
+    filter: invert(1) grayscale(1) brightness(2) drop-shadow(0 0 10px #b1d4ff);
+
 }
 .logo h1 {
     font-size: 20px;
-    color: #ffffffb5;
+    color: #fffffff9;
     letter-spacing: 3px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
-    /*tengo que buscar una fuente que me guste*/
+    font-family: 'Chewy' cursive;
+    text-shadow: 0 0 8px #180a4d;
 }
 .menu {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
     display: flex;
     gap: 15px;
     align-items: center;
@@ -49,21 +51,22 @@
 }
 .menu a:hover {
     color: rgba(0, 0, 0, 0.741);
-    background-color: rgba(7, 47, 87, 0.278);
+    background-color: #13254d9a;
     border-radius: 2px;
     padding: 8px;
 }
 .contenido {
     text-align: center;
     margin-top: 50px;
-    color: #ffffffc5;
+    color: #ddddddd1;
+    font-family: 'Poppins', sans-serif;
 }
 .contenido h3 {
-    font-size: 28px;
+    font-size: 26px;
     margin-bottom: 20px;
 }
 .contenido p {
-    font-size: 15px;
+    font-size: 12px;
     font-style: italic;
 }
 .carrousel {
@@ -78,14 +81,17 @@
     overflow: hidden;
 }
 .imagenes {
-    width: fit-content;
-    height: 400px;
     display: flex;
-    gap: none;
-    padding: none;
-    margin: none;
-    justify-content: center;
-    align-items: center;
+    height: 400px;
+    width: 100%;
+    transition: transform 0.6s ease;
+}
+
+.imagenes img {
+    width: 700px;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
 }
 .botones {
     display: flex;
@@ -115,11 +121,14 @@ body{
 }
 footer {
     text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
     padding: 15px;
-    background-color: rgba(120, 120, 120, 0.088);
+    background-color: rgba(19, 15, 132, 0.019);
     color: #ffffffb5;
     position: relative;
     bottom: 0;
     width: 100%;
     margin-top: 50px;
+    margin-bottom: 20px;
 }

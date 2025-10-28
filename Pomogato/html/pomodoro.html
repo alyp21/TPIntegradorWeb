@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Pomodoro | Pomogato </title>
+    <link rel="stylesheet" href="../estilos/pomodoro.css">
+</head>
+<body>
+    <header class ="encabezado">
+            <div class ="logo">
+                <img src="../img/logo.png" width="50px" height="50px">
+                <h1> Pomodoro  </h1>
+            </div>
+            <nav>
+                <ul class = "menu">
+                    <li> <a href="index.html"> Inicio </a> </li>
+                    <li> <a href="pomodoro.html"> Pomodoro </a> </li>
+                    <li> <a href="contacto.html"> Contacto </a> </li>
+                </ul>
+            </nav>           
+    </header>
+    <main class="pomodoro">
+        <div class="temporizador">
+            <span id = "minutos"> 25 </span> : <span id = "segundos"> 00 </span>
+        </div>
+        <div class="botones">
+            <button id="iniciar"> Iniciar </button>
+            <button id="pausar"> Pausar </button>
+            <button id="reiniciar"> Reiniciar </button>
+        </div>
+        
+        <div id="mensaje"></div>
+        // esto se implementa en js, la idea es q cuando termine el tiempo y suene el miau, se muestre un mensaje
+        // de felicitaciones o de descanso y mostrar un gato curioso sobre los gatitos de modo de recompensa por 
+        // el logro ?? no se, yo me entiendo, igual esta sugeto a cambios ahre
+    </main>
+
+    <audio id="gatitomiau" src="gatito.mp3"></audio>
+    //tengo q agregar el audio del miau
+
+    <script src="../javascript/jspomodoro.js"></script>
+</body>
+<footer>
+    <p> © 2025 Pomogato | 🐈‍⬛ </p>
+</footer>
+</html>
