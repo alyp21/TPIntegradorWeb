@@ -1,0 +1,106 @@
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(42, 63, 158, 0.153);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    
+}
+.logo img {
+    width: 22px;
+    height: 22px;
+    padding-top: none;
+    margin-top: none;
+    padding-left: 5px;
+    padding-right: 2px;
+    filter: invert(1) grayscale(1) brightness(2) drop-shadow(0 0 10px #b1d4ff);
+
+}
+.logo h1 {
+    font-size: 20px;
+    color: #fffffff9;
+    letter-spacing: 3px;
+    font-family: 'Chewy' cursive;
+    text-shadow: 0 0 8px #180a4d;
+}
+.menu {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    letter-spacing: 3px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    padding-top: 12px;
+    padding-right: 6px;
+    color: #ffffffaf;
+}
+.menu a {
+    text-decoration: none;
+    color: #ffffffb3;
+    font-weight: bold;
+    padding-left: 2px;
+    padding-right: 30px;
+    justify-content: center;
+    transition:0.3s;
+    letter-spacing: 1px;
+}
+.menu a:hover {
+    color: rgba(255, 255, 255, 0.741);
+    background-color: #13254d9a;
+    border-radius: 2px;
+    padding: 8px;
+}
+body{
+    background-image: url(../img/image.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding: 15px;
+    background-color: rgba(19, 15, 132, 0.019);
+    color: #ffffffb5;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.pomodoro {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: #ffffffd1;
+}
+.temporizador {
+    font-size: 80px;
+    margin: 20px;
+    padding: 20px;
+    font-weight: bold;
+    text-shadow: 0 0 10px #000000b3;
+}
+
+.botones button{
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    gap: 30px;
+    padding: 5px 10px;
+    background-color: #13254d0f;
+    color: #b1d4ff;
+    border-color: #b1d4ff;
+    border-radius: 2px;
+    margin: 10px;
+}
+.botones button:hover {
+    background-color: #183063a6;
+    color: #b1d4ff;
+    cursor: pointer;
+    transition: 0.3s;
+}
