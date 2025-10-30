@@ -4,6 +4,7 @@
     align-items: center;
     padding: 10px 20px;
     background-color: rgba(42, 63, 158, 0.153);
+    backdrop-filter: blur(5px);
 }
 .logo {
     display: flex;
@@ -31,30 +32,43 @@
 .menu {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
-    letter-spacing: 3px;
     display: flex;
-    gap: 15px;
+    gap: 20px;
     align-items: center;
-    padding-top: 12px;
-    padding-right: 6px;
+    justify-content: center;
+    padding: 10px 5px 8px;
     color: #ffffffaf;
+    
 }
 .menu a {
     text-decoration: none;
     color: #ffffffb3;
     font-weight: bold;
-    padding-left: 2px;
-    padding-right: 30px;
-    justify-content: center;
-    transition:0.3s;
-    letter-spacing: 1px;
+    padding: 10px 14px 4px 8px;
+    letter-spacing: 2px;
+    position: relative;
+    transition: .5s ease;
+    text-decoration: none;
+    
 }
 .menu a:hover {
-    color: rgba(255, 255, 255, 0.741);
-    background-color: #13254d9a;
-    border-radius: 2px;
-    padding: 8px;
+    color: #ffffff;
 }
+
+.menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0.8px;
+    background-color: #ffffffb3;
+    transition: width 0.3s ease;
+}
+.menu a:hover::after {
+    width: 90%;
+}
+
 .contenido {
     text-align: center;
     margin-top: 50px;
@@ -115,7 +129,7 @@
     padding: 8px;
 }
 body{
-    background-image: url(../img/image.png);
+    background-image: url(../img/fondo_index.png);
     background-size: cover;
     background-attachment: fixed;
 }
