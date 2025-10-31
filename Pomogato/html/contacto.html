@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Contacto | Pomogato </title>
+    <title> Contacto | Pomogato 🐾 </title>
     <link rel="stylesheet" href="../estilos/estilocontacto.css">
     <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
 <body>
     <header class ="encabezado">
             <div class ="logo">
-                <img src="../img/logo.png" width="50px" height="50px">
+                <img src="../img/Logo-stray.webp" width="90px" height="60px">
                 <h1> Pomogato </h1>
             </div>
             <nav>
@@ -25,6 +25,34 @@
             </nav>           
     </header>
 </body>
+    <form id="formContacto">
+        <div>
+            <label for="name"> Nombre Completo: </label> <br>
+            <input id="name" name="name" type="text" maxlength="50" required>
+            <div id="errorNombre"></div>
+        </div>
+    <div>
+        <label for="email"> Email: </label> <br>
+        <input id="email" name="email" type="email" maxlength="100" required>
+        <div id="errorEmail"></div>
+    </div>
+
+    <div>
+        <label for="phone"> Telefono: </label> <br>
+        <input id="phone" name="telefono" type="phone" maxlength="20" required>
+        <div id="errorTelefono"></div>
+    </div>
+    <div>
+        <label for="mensaje"> Mensaje: </label> <br>
+        <textarea id="mensaje" name="mensaje" rows="4" maxlength="300"></textarea>
+        <div id="errorMensaje"></div>
+    </div>
+        <div id="formErrores"></div>
+        <button type="submit">Enviar</button>
+    </form>
+        <div id="submittedData"></div>
+
+    <script src="../javascript/jscontacto.js"></script>
 <footer>
     <p> © 2025 Pomogato | 🐈‍⬛ </p>
 </footer>
