@@ -3,8 +3,30 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(42, 63, 158, 0.153);
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.355);
 }
+
+body{
+    background-image: url(../img/fondo_index.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+footer {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    padding: 20px;
+    background-color: rgba(19, 15, 132, 0.019);
+    color: #ffffffb5;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.521);
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -29,6 +51,7 @@
     font-family: 'Chewy' cursive;
     text-shadow: 0 0 8px #180a4d;
 }
+
 .menu {
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
@@ -68,56 +91,89 @@
 .menu a:hover::after {
     width: 90%;
 }
-.contenido {
+
+form {
+    max-width: 300px;
+    margin: 60px;
+    background: rgba(255, 255, 255, 0.008);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.15), 0 0 10px rgba(100,200,255,0.08);
+    backdrop-filter: blur(2px);
+    transition: transform 0.3s ease;
+}
+
+form:hover {
+    transform: scale(1.01);
+}
+
+form label {
+    font-weight: 60;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+form input,
+form textarea {
+    width: 60%;
+    padding: 12px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff34;
+    border-radius: 1px;
+    background-color: transparent;
+    color: #f3f3f3;
+    font-size: 15px;
+    text-align:left;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #ffffffbd;
+    box-shadow: 0 0 8px rgba(107, 97, 255, 0.4);
+
+}
+
+
+form button {
+    width: 65.5%;
+    padding: 12px;
+    background: #13335b;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+form button:hover {
+    background: #1d3154;
+    box-shadow: 0 0 15px rgba(144, 144, 144, 0.5);
+}
+
+#errorNombre,
+#errorEmail,
+#errorTelefono,
+#errorMensaje,
+#formErrores {
+    color: #f3f3f3;
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+#submittedData {
+    max-width: 200px;
+    align-items: baseline;
+    margin: 30px auto;
+    background: #ffffff27;
+    border: 1px solid #ffffff;
+    border-radius: 15px;
     padding: 20px;
-}
-body{
-    background-image: url(../img/fondo_index.png);
-    background-size: cover;
-    background-attachment: fixed;
-}
-footer {
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 12px;
-    padding: 15px;
-    background-color: rgba(19, 15, 132, 0.019);
-    color: #ffffffb5;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-#formContacto {
-    background-color: rgba(255, 255, 255, 0.382);
-    padding: 30px;
-    align-items: center;
-    text-align: center;
-    border-radius: 5px;
-    width: 250px;
-    height: 400px;
-    margin: 80px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
-}
-
-label {
-    text-align: center;
-    padding: 30px;
-    margin: 20px;
-}
-
-input {
-    text-align: center;
-    padding: 8px;
-    margin: 8px;
-    border: none;
-    background: transparent;
-}
-textarea {
-    text-align: center;
-    padding: 8px;
-    margin: 8px;
-    border: none;
-    background: transparent;
+    color: #11253e;
 }

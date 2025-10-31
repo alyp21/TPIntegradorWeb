@@ -3,8 +3,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgba(42, 63, 158, 0.153);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.355);
 }
 .logo {
     display: flex;
@@ -138,12 +138,13 @@ footer {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 12px;
-    padding: 15px;
+    padding: 20px;
     background-color: rgba(19, 15, 132, 0.019);
     color: #ffffffb5;
     position: relative;
     bottom: 0;
     width: 100%;
     margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 6px;
+    border-top: 1px solid rgba(255, 255, 255, 0.521);
 }
