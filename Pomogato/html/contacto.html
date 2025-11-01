@@ -11,20 +11,22 @@
 
 </head>
 <body>
-    <header class ="encabezado">
-            <div class ="logo">
-                <img src="../img/Logo-stray.webp" width="90px" height="60px">
-                <h1> Pomogato </h1>
-            </div>
-            <nav>
-                <ul class = "menu">
-                    <li> <a href="index.html"> Inicio </a> </li>
-                    <li> <a href="pomodoro.html"> Pomodoro </a> </li>
-                    <li> <a href="contacto.html"> Contacto </a> </li>
-                </ul>
-            </nav>           
+    <header class="encabezado">
+        <div class="logo">
+            <a href="../html/index.html" class="logo-link">
+                <img src="../img/pomogato.logo.png" width="90px" alt="Logo Pomogato">
+            </a>
+        </div>
+        <nav>
+            <ul class="menu">
+                <li><a href="../html/index.html">Inicio</a></li>
+                <li><a href="pomodoro.html">Pomodoro</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 </body>
+<main class="contenedorform">
     <form id="formContacto">
         <div>
             <label for="name"> Nombre Completo: </label> <br>
@@ -50,8 +52,18 @@
         <div id="formErrores"></div>
         <button type="submit">Enviar</button>
     </form>
+</main>
         <div id="submittedData"></div>
-
+        <div class="creditos">
+            <div class="nombre">
+            <img src="../img/icon.png" alt="Icono patita" class="patita">
+            <span>Perello Alybel</span>
+            </div>
+            <div class="nombre">
+            <img src="../img/icon.png" alt="Icono patita" class="patita">
+            <span>Saccone Cristian</span>
+    </div>
+</div>
     <script src="../javascript/jscontacto.js"></script>
 <footer>
     <p> © 2025 Pomogato | 🐈‍⬛ </p>

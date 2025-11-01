@@ -1,30 +1,28 @@
-const imagenes = document.querySelector(".imagenes");
-const botonIzquierda = document.getElementById("izquierda");
-const botonDerecha = document.getElementById("derecha");
-const listaImagenes = document.querySelectorAll(".imagenes img");
+const contenedor = document.querySelector(".imagenes");
+const imagenes = Array.from(contenedor.children);
 
-let indice = 0;
-const total = listaImagenes.length;
+imagenes.forEach(img => {
+    const clon = img.cloneNode(true);
+    contenedor.appendChild(clon);
+});
 
-function mostrarImagen() {
-  const desplazamiento = -indice * listaImagenes[0].clientWidth;
-    imagenes.style.transform = `translateX(${desplazamiento}px)`;
-    imagenes.style.transition = "transform 0.6s ease";
+let desplazamiento = 0;
+let velocidad = 5;
+
+function moverCarrousel() {
+    desplazamiento -= velocidad;
+
+  const anchoTotal = imagenes[0].clientWidth * imagenes.length;
+
+    if (Math.abs(desplazamiento) >= anchoTotal) {
+    desplazamiento = 0;
+    }
+
+    contenedor.style.transform = `translateX(${desplazamiento}px)`;
+    requestAnimationFrame(moverCarrousel);
 }
 
-botonDerecha.addEventListener("click", () => {
-    indice = (indice + 1) % total;
-    mostrarImagen();
-});
+moverCarrousel();
 
-botonIzquierda.addEventListener("click", () => {
-    indice = (indice - 1 + total) % total;
-    mostrarImagen();
-});
-
-setInterval(() => {
-    indice = (indice + 1) % total;
-    mostrarImagen();
-}, 4000);
-
-window.addEventListener("resize", mostrarImagen);
+contenedor.addEventListener("mouseenter", () => (velocidad = 0));
+contenedor.addEventListener("mouseleave", () => (velocidad = 3));

@@ -1,5 +1,5 @@
-let tiempoTrabajo = 60;
-let tiempoDescanso = 20
+let tiempoTrabajo = 1500;
+let tiempoDescanso = 300;
 let tiempoActual = tiempoTrabajo;
 let enDescanso = false;
 let temporizador = null;
@@ -13,18 +13,10 @@ const mensaje = document.getElementById("mensaje");
 const audioMiau = document.getElementById("gatitomiau");
 
 const mensajesTrabajo = [
-    "¡Hora de descansar!" 
-    + "\n El protagonista (Heroe) tuvo varias inspiraciones reales"
-    + "\n que ayudaron a desarrollar Stray.",
-    "¡Hora de descansar!"
-    + "\n Stray y Travel Cat tuvieron un acuerdo para sacar productos"
-    + "\n especialmente para los felinos reales.",
-    "¡Hora de descansar!",
-    + "\n El juego esta ayudando a recaudar fondos para ayudar,"
-    + "\n a los gatos callejeros en la vida real. 🐾",
-    "¡Hora de descansar!",
-    + "\n Stray actualmente  esta en el top numero 1 en las"
-    + "\n listas de juegos mas vendidos en Steam. ",
+    "¡Hora de descansar!" + "\n El protagonista (Heroe) tuvo varias inspiraciones reales" + "\n que ayudaron a desarrollar Stray.",
+    "¡Hora de descansar!" + "\n Stray y Travel Cat tuvieron un acuerdo para sacar productos" + "\n especialmente para los felinos reales.",
+    "¡Hora de descansar!" + "\n El juego esta ayudando a recaudar fondos para ayudar," + "\n a los gatos callejeros en la vida real. 🐾",
+    "¡Hora de descansar!" + "\n Stray actualmente  esta en el top numero 1 en las" + "\n listas de juegos mas vendidos en Steam. ",
 ];
 
 const mensajesDescanso = [
