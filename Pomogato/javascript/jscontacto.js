@@ -10,11 +10,11 @@ const formErrors = document.getElementById('erroresForm');
 const submittedData = document.getElementById('submittedData');
 
 function clearErrors(){
-    errorNombre.textContent = '';
-    errorEmail.textContent = '';
-    errorTelefono.textContent = '';
-    erroMensaje.textContent = '';
-    formErrores.textContent = '';
+    errName.textContent = '';
+    errEmail.textContent = '';
+    errPhone.textContent = '';
+    errMessage.textContent = '';
+    formErrors.textContent = '';
 }
 
 function sanitize(str){
