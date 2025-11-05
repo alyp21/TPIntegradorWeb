@@ -91,14 +91,13 @@
 }
 .imagenes {
     display: flex;
-    height: 400px;
-    width: 900%;
+    height: 500px;
+    width: 800%;
     transition: transform 0.6s ease;
 }
 
 .imagenes img {
-    width: 900px;
-    height: 100%;
+    width: 80%;
     object-fit: cover;
     flex-shrink: 0;
 }

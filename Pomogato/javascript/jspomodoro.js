@@ -12,6 +12,12 @@ const reiniciar = document.getElementById("reiniciar");
 const mensaje = document.getElementById("mensaje");
 const audioMiau = document.getElementById("gatitomiau");
 
+const estadoGuardado = JSON.parse(localStorage.getItem("pomogatoEstado"));
+if (estadoGuardado) {
+  tiempoActual = estadoGuardado.tiempoActual;
+  enDescanso = estadoGuardado.enDescanso;
+  mensaje.textContent = estadoGuardado.mensajeTexto || "";
+}
 const mensajesTrabajo = [
     "¡Hora de descansar!" + "\n El protagonista (Heroe) tuvo varias inspiraciones reales" + "\n que ayudaron a desarrollar Stray.",
     "¡Hora de descansar!" + "\n Stray y Travel Cat tuvieron un acuerdo para sacar productos" + "\n especialmente para los felinos reales.",
@@ -76,6 +82,7 @@ function reiniciarPomodoro() {
     tiempoActual = tiempoTrabajo;
     mensaje.textContent = "";
     actualizarDisplay();
+    localStorage.removeItem("pomogatoEstado");
 }
 
 iniciar.addEventListener("click", iniciarPomodoro);
@@ -83,3 +90,12 @@ pausar.addEventListener("click", pausarPomodoro);
 reiniciar.addEventListener("click", reiniciarPomodoro);
 
 actualizarDisplay();
+
+window.addEventListener("beforeunload", () => {
+    const estado = {
+    tiempoActual,
+    enDescanso,
+    mensajeTexto: mensaje.textContent,
+    };
+    localStorage.setItem("pomogatoEstado", JSON.stringify(estado));
+});
