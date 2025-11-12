@@ -8,8 +8,8 @@
 }
 
 body{
-    background-image: url(img/fondo_index.png);
-    cursor: url("cursor/cursor_cat.cur"), auto;
+    background-image: url(../img/fondo_index.png);
+    cursor: url("../cursor/cursor_cat.cur"), auto;
     background-size: cover;
     background-attachment: fixed;
     justify-content: center;

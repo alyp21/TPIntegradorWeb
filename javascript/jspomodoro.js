@@ -54,7 +54,7 @@ function iniciarPomodoro() {
         if (tiempoActual <= 0) {
             clearInterval(temporizador);
             temporizador = null;
-            audioMiau.play(); // tengo q buscar eso
+            audioMiau.play();
 
             if (!enDescanso) {
                 mensaje.textContent = mensajeAleatorio(mensajesTrabajo);
