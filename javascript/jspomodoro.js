@@ -14,9 +14,9 @@ const audioMiau = document.getElementById("gatitomiau");
 
 const estadoGuardado = JSON.parse(localStorage.getItem("pomogatoEstado"));
 if (estadoGuardado) {
-  tiempoActual = estadoGuardado.tiempoActual;
-  enDescanso = estadoGuardado.enDescanso;
-  mensaje.textContent = estadoGuardado.mensajeTexto || "";
+    tiempoActual = estadoGuardado.tiempoActual;
+    enDescanso = estadoGuardado.enDescanso;
+    mensaje.textContent = estadoGuardado.mensajeTexto || "";
 }
 const mensajesTrabajo = [
     "¡Hora de descansar!" + "\n El protagonista (Heroe) tuvo varias inspiraciones reales" + "\n que ayudaron a desarrollar Stray.",
